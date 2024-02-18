@@ -1,4 +1,4 @@
-
+ 
 let totalCount = 1;
 let sum = 0;
 const cards = document.getElementsByClassName("card");

@@ -172,7 +172,7 @@
 
       <!-- Bus Ticket section Start -->
       <section>
-        <div class="buss mb-20">
+        <div  class="buss mb-20">
           <div>
             <h3 class="text-4xl font-bold text-center mt-20">P.H Paribahan</h3>
             <p class="text-center w-2/5 mx-auto font-inter my-4">
@@ -221,7 +221,7 @@
                 <img src="./images/fare.png" alt="">
               </div>
               <div>
-                <h1 class="text-4xl font-bold mb-4 text-center"><span id="perSeatMoney">0</span> Taka</h1>
+                <h1 class="text-4xl font-bold mb-4 text-center font-inter"><span id="perSeatMoney">0</span> Taka</h1>
                 <p class="text-xl font-medium text-center">Per Seat</p>
               </div>
             </div>  
@@ -254,52 +254,52 @@
           </div>
           <!-- Seat List -->
             <div class="grid grid-cols-5 gap-10  text-center mt-6">
-              <div id="A" class="plan">A</div>
+              <div id="A" class="plane">A</div>
               <div id="A1" class="plan">A1</div>
               <div id="A2" class="plan">A2</div>
               <div id="A3" class="plan">A3</div>
               <div id="A4" class="plan">A4</div>
-              <div id="B" class="plan">B</div>
+              <div id="B" class="plane">B</div>
               <div id="B1" class="plan">B1</div>
               <div id="B2" class="plan">B2</div>
               <div id="B3" class="plan">B3</div>
               <div id="B4" class="plan">B4</div>
-              <div id="C" class="plan">C</div>
+              <div id="C" class="plane">C</div>
               <div id="C1" class="plan">C1</div>
               <div id="C2" class="plan">C2</div>
               <div id="C3" class="plan">C3</div>
               <div id="C4" class="plan">C4</div>
-              <div id="D" class="plan">D</div>
+              <div id="D" class="plane">D</div>
               <div id="D1" class="plan">D1</div>
               <div id="D2" class="plan">D2</div>
               <div id="D3" class="plan">D3</div>
               <div id="D4" class="plan">D4</div>
-              <div id="E" class="plan">E</div>
+              <div id="E" class="plane">E</div>
               <div id="E1" class="plan">E1</div>
               <div id="E2" class="plan">E2</div>
               <div id="E3" class="plan">E3</div>
               <div id="E4" class="plan">E4</div>
-              <div id="F" class="plan">F</div>
+              <div id="F" class="plane">F</div>
               <div id="F1" class="plan">F1</div>
               <div id="F2" class="plan">F2</div>
               <div id="F3" class="plan">F3</div>
               <div id="F4" class="plan">F4</div>
-              <div id="G" class="plan">G</div>
+              <div id="G" class="plane">G</div>
               <div id="G1" class="plan">G1</div>
               <div id="G2" class="plan">G2</div>
               <div id="G3" class="plan">G3</div>
               <div id="G4" class="plan">G4</div>
-              <div id="H" class="plan">H</div>
+              <div id="H" class="plane">H</div>
               <div id="H1" class="plan">H1</div>
               <div id="H2" class="plan">H2</div>
               <div id="H3" class="plan">H3</div>
               <div id="H4" class="plan">H4</div>
-              <div id="I" class="plan">I</div>
+              <div id="I" class="plane">I</div>
               <div id="I1" class="plan">I1</div>
               <div id="I2" class="plan">I2</div>
               <div id="I3" class="plan">I3</div>
               <div id="I4" class="plan">I4</div>
-              <div id="J" class="plan">J</div>
+              <div id="J" class="plane">J</div>
               <div id="J1" class="plan">J1</div>
               <div id="J2" class="plan">J2</div>
               <div id="J3" class="plan">J3</div>
@@ -312,42 +312,39 @@
           <h3 class="text-xl font-bold mb-5">Select Your Seat</h3>
           <div class="bg-[#F7F8F8] p-2">
             <div class="flex justify-between p-2 font-inter">
-              <p>Seat</p>
+              <p>Seat <span id="set" class="bg-[#1DD100] text-white">0</span></p>
               <p>Class</p>
               <p>Price</p>
             </div>
             <hr>
             <div>
-              <div class="flex justify-between p-2 font-inter mt-2">
-                <p>C2</p>
-                <p>Economoy</p>
-                <p>550</p>
+              <div id="economy" class="flex justify-between p-2 font-inter mt-2">
+                
               </div>
               <div class="flex justify-between p-2 font-inter">
-                <p>C2</p>
-                <p>Economoy</p>
-                <p>550</p>
+                
               </div> <br>
               <hr>
               <div class="flex justify-between p-2 text-lg font-bold font-inter mt-3">
                 <p>Total Price</p>
-                <p>BDT 1100</p>
+                <p>BDT <span id="bdt">00</span></p>
               </div>
             </div>
   
             <div class="">
               <label class="input p-7 flex items-center gap-2 mt-4">
-                <input type="text" class="grow border-0" placeholder="Have any Copupon?" />
-                <button class="btn bg-[#1DD100] text-white font-bold px-5 ">Apply</button>
+                <input id="coupone" type="text" class="grow border-0" placeholder="Have any Copupon?" />
+                <button id="apply-btn" class="btn bg-[#1DD100] text-white font-bold px-5 ">Apply</button>
               </label>
             </div>
             <div class="flex justify-between p-2 text-lg font-bold font-inter mt-3">
               <p>Grand Total</p>
-              <p>BDT 1100</p>
+              <p>BDT <span id="grandTotal">00</span></p>
             </div>
           </div>
 
            <div class="container mx-auto ">
+
             <div class="">
               <h3 class="text-xl font-bold my-4">Passenger Name*</h3>
               <label class="input input-bordered flex items-center gap-2">
@@ -428,5 +425,6 @@
     </footer>
 
     <script src="javascript/script.js"></script>
+   
   </body>
 </html>
