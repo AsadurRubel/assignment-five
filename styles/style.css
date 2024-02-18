@@ -24,3 +24,21 @@
     border-radius: 88px 88px 0px 0px;
     background: rgb(247, 248, 248);
 }
+
+/* .seeet{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: blanchedalmond;
+            
+} */
+.plan{
+    background-color: #F7F8F8;
+    border-radius: 10px;
+    height: 4rem;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+
+}
+.plan:hover{
+    cursor: pointer;
+}

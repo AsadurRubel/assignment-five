@@ -172,7 +172,7 @@
 
       <!-- Bus Ticket section Start -->
       <section>
-        <div class="buss mb-96">
+        <div class="buss mb-20">
           <div>
             <h3 class="text-4xl font-bold text-center mt-20">P.H Paribahan</h3>
             <p class="text-center w-2/5 mx-auto font-inter my-4">
@@ -194,7 +194,7 @@
                   <div class="flex">
                     <button class="btn bg-[#1DD10026] text-[#1DD100] font-inter">
                       <img src="./images/seat-green.png" alt="" />
-                      40 Seats left
+                      <span id="seat40">40</span>Seats left
                     </button>         
                   </div>      
                 </div>           
@@ -221,17 +221,211 @@
                 <img src="./images/fare.png" alt="">
               </div>
               <div>
-                <h1 class="text-4xl font-bold mb-4 text-center">550 Taka</h1>
+                <h1 class="text-4xl font-bold mb-4 text-center"><span id="perSeatMoney">0</span> Taka</h1>
                 <p class="text-xl font-medium text-center">Per Seat</p>
               </div>
             </div>  
           </div> 
+
+
+
+          <!-- Ticketing Interface section Start -->
+      <div class="container mx-auto mt-10 bg-white p-4 rounded-2xl flex gap-10">
+        <div class="w-3/5">
+          <div class="seat">
+            <h3 class="text-xl font-bold mb-5">Select Your Seat</h3>
+            <hr>
+            <div class="flex justify-between mt-2">
+              <div class="flex gap-2">
+                <div><img src="./images/seat-gray.png" alt=""></div>
+                <div><p class="font-semibold font-inter">Available</p></div>
+              </div>
+              <div class="flex gap-2 ">
+                <div><img src="./images/seat-green-filled.png" alt=""></div>
+                <div><p class="font-semibold text-[#1DD100] font-inter">  Selected</p></div>
+              </div>
+            </div>
+  
+            <div class="flex justify-end mt-4">
+              <button class="btn px-10">
+                <div class="w-10 "><img src="./images/staring.jpg" alt="" class="p-1"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Seat List -->
+            <div class="grid grid-cols-5 gap-10  text-center mt-6">
+              <div id="A" class="plan">A</div>
+              <div id="A1" class="plan">A1</div>
+              <div id="A2" class="plan">A2</div>
+              <div id="A3" class="plan">A3</div>
+              <div id="A4" class="plan">A4</div>
+              <div id="B" class="plan">B</div>
+              <div id="B1" class="plan">B1</div>
+              <div id="B2" class="plan">B2</div>
+              <div id="B3" class="plan">B3</div>
+              <div id="B4" class="plan">B4</div>
+              <div id="C" class="plan">C</div>
+              <div id="C1" class="plan">C1</div>
+              <div id="C2" class="plan">C2</div>
+              <div id="C3" class="plan">C3</div>
+              <div id="C4" class="plan">C4</div>
+              <div id="D" class="plan">D</div>
+              <div id="D1" class="plan">D1</div>
+              <div id="D2" class="plan">D2</div>
+              <div id="D3" class="plan">D3</div>
+              <div id="D4" class="plan">D4</div>
+              <div id="E" class="plan">E</div>
+              <div id="E1" class="plan">E1</div>
+              <div id="E2" class="plan">E2</div>
+              <div id="E3" class="plan">E3</div>
+              <div id="E4" class="plan">E4</div>
+              <div id="F" class="plan">F</div>
+              <div id="F1" class="plan">F1</div>
+              <div id="F2" class="plan">F2</div>
+              <div id="F3" class="plan">F3</div>
+              <div id="F4" class="plan">F4</div>
+              <div id="G" class="plan">G</div>
+              <div id="G1" class="plan">G1</div>
+              <div id="G2" class="plan">G2</div>
+              <div id="G3" class="plan">G3</div>
+              <div id="G4" class="plan">G4</div>
+              <div id="H" class="plan">H</div>
+              <div id="H1" class="plan">H1</div>
+              <div id="H2" class="plan">H2</div>
+              <div id="H3" class="plan">H3</div>
+              <div id="H4" class="plan">H4</div>
+              <div id="I" class="plan">I</div>
+              <div id="I1" class="plan">I1</div>
+              <div id="I2" class="plan">I2</div>
+              <div id="I3" class="plan">I3</div>
+              <div id="I4" class="plan">I4</div>
+              <div id="J" class="plan">J</div>
+              <div id="J1" class="plan">J1</div>
+              <div id="J2" class="plan">J2</div>
+              <div id="J3" class="plan">J3</div>
+              <div id="J4" class="plan">J4</div>
+          
+            </div>
+        </div>
+
+        <div class="count flex-1">
+          <h3 class="text-xl font-bold mb-5">Select Your Seat</h3>
+          <div class="bg-[#F7F8F8] p-2">
+            <div class="flex justify-between p-2 font-inter">
+              <p>Seat</p>
+              <p>Class</p>
+              <p>Price</p>
+            </div>
+            <hr>
+            <div>
+              <div class="flex justify-between p-2 font-inter mt-2">
+                <p>C2</p>
+                <p>Economoy</p>
+                <p>550</p>
+              </div>
+              <div class="flex justify-between p-2 font-inter">
+                <p>C2</p>
+                <p>Economoy</p>
+                <p>550</p>
+              </div> <br>
+              <hr>
+              <div class="flex justify-between p-2 text-lg font-bold font-inter mt-3">
+                <p>Total Price</p>
+                <p>BDT 1100</p>
+              </div>
+            </div>
+  
+            <div class="">
+              <label class="input p-7 flex items-center gap-2 mt-4">
+                <input type="text" class="grow border-0" placeholder="Have any Copupon?" />
+                <button class="btn bg-[#1DD100] text-white font-bold px-5 ">Apply</button>
+              </label>
+            </div>
+            <div class="flex justify-between p-2 text-lg font-bold font-inter mt-3">
+              <p>Grand Total</p>
+              <p>BDT 1100</p>
+            </div>
+          </div>
+
+           <div class="container mx-auto ">
+            <div class="">
+              <h3 class="text-xl font-bold my-4">Passenger Name*</h3>
+              <label class="input input-bordered flex items-center gap-2">
+                <input type="text" class="grow font-inter" placeholder="Enter your name" />
+              </label>
+            </div>
+            <div class="">
+              <h3 class="text-xl font-bold my-4">Phone Number*</h3>
+              <label class="input input-bordered flex items-center gap-2">
+                <input type="number" class="grow font-inter" placeholder="Enter your phone number" />
+              </label>
+            </div>
+            <div class="">
+              <h3 class="text-xl font-bold my-4">Email ID</h3>
+              <label class="input input-bordered flex items-center gap-2">
+                <input type="email" class="grow font-inter" placeholder="Enter your email id" />
+              </label>
+              <button class="btn btn-wide w-full bg-[#1DD100] text-white text-xl font-bold mt-5">Next</button>
+            </div>
+
+            <div class="flex justify-around mt-10">
+              <p><u>Terms and Conditions</u></p>
+            <p><u>Cancelliation Policy</u></p>
+            </div>
+           </div>
+        </div>
+      </div>
+
+      <!-- Ticketing Interface section End -->
         </div>
       </section>
       <!-- Bus Ticket section End -->
+
+      
     </main>
 
-    <footer></footer>
+    <footer class="bg-black">
+
+      <footer class="footer p-10  text-white  ">
+        <div class="container mx-auto flex justify-between">
+          <nav>
+            <h6 class="footer-title text-4xl ">P-Ticket</h6> 
+            <p class="text-lg">P-Ticket is a digital platform to make your daily commuting better.</p>
+          </nav> 
+          
+          <nav>
+            <h6 class="footer-title text-xl font-medium">Download our app</h6> 
+            <div class="grid grid-flow-col gap-4 ">
+              <div class=" flex gap-2 border-4 border-white rounded-xl p-2">
+                
+                  <div class=" ">
+                    <img src="./images/playstore.png" alt="">
+                  </div>
+                  <div>
+                    <p class="text-lg font-semibold ">GET IN ON</p>
+                  <h3 class="text-4xl font-bold">Google Play</h3>
+                  </div>
+                
+              </div>
+              
+          </nav>
+        </div>
+
+        
+      </footer>
+      <hr class="h-4 ">
+      <div class=" container mx-auto flex justify-between mb-10">
+        <div>
+          <p class="text-lg font-medium text-white">@all rights reserved, P-Ticket services limited.2024</p>
+        </div>
+        <div class="flex gap-6 mb-10 text-white text-lg font-medium">
+          <p>Terms & condition</p>
+          <p>Return & refund policy</p>
+          <p>Privacy policy</p>
+        </div>
+      </div>
+
+    </footer>
 
     <script src="javascript/script.js"></script>
   </body>
