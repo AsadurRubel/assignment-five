@@ -1,70 +1,96 @@
-
-
 let totalSeat = 40;
 let sum = 0;
 let clickedSeats = 0;
-const seats = document.getElementsByClassName('plan');
+const seats = document.getElementsByClassName("plan");
 
 for (let seat of seats) {
-   seat.addEventListener('click', function() {
-       const seat42 = document.getElementById('seat40');
-       let currentSeatCount = parseFloat(seat42.innerText);
-       currentSeatCount--;
-       seat42.innerText = currentSeatCount;
+  seat.addEventListener("click", function oneClick() {
+    seat.removeEventListener('click', oneClick);
 
-       const set2 = document.getElementById('set');
-       let currentSet2Count = parseFloat(set2.innerText);
-       currentSet2Count++;
-       set2.innerText = currentSet2Count;
-    //    console.log(currentSeatCount);
+    if (clickedSeats < 4) {
+        
+    seat.classList.add('bg-[#1DD100]');
+      // 40 Seat Left
+      const seat42 = document.getElementById("seat40");
+      let currentSeatCount = parseFloat(seat42.innerText);
+      currentSeatCount--;
+      seat42.innerText = currentSeatCount;
 
-    const forPerSeatCost = document.getElementById('perSeatMoney');
-    let perSeatCost = parseFloat(forPerSeatCost.innerText);
-    let totalSeatCost = perSeatCost + 550;
-    forPerSeatCost.innerText = totalSeatCost;
-     sum +=550;
+      // Seat Click 4
+      const set2 = document.getElementById("set");
+      let currentSet2Count = parseFloat(set2.innerText);
+      currentSet2Count++;
+      set2.innerText = currentSet2Count;
+
+        // Seat Class Price Section
+    const seatClassPrice = document.getElementById("economy");
+    const rowLine = document.createElement("tr");
+    const td = document.createElement("td");
+    td.innerText = seat.innerText;
+    rowLine.appendChild(td);
+
+    const economy = document.createElement("td");
+    economy.innerText = "Economy";
+    rowLine.appendChild(economy);
+
+    const price = document.createElement("td");
+    price.innerText = "550";
+    rowLine.appendChild(price);
+
+    seatClassPrice.appendChild(rowLine);
+      
+      // Per Seat Taka
+      const forPerSeatCost = document.getElementById("perSeatMoney");
+      let perSeatCost = parseFloat(forPerSeatCost.innerText);
+      let totalSeatCost = perSeatCost + 550;
+      forPerSeatCost.innerText = totalSeatCost;
+      sum += 550;
+
+      const bdtTk = document.getElementById("bdt");
+      bdtTk.innerText = sum;
+
+      const grandTk = document.getElementById("grandTotal");
+      grandTk.innerText = sum;
+
+      clickedSeats++;
+    } else {
+      alert("You have already clicked four seats");
+    }
+
     
-
-   const bdtTk =document.getElementById('bdt');
-        bdtTk.innerText = sum;
-
-   const grandTk =document.getElementById('grandTotal');
-        grandTk.innerText = sum;
-
-    if(clickedSeats < 4){
-        clickedSeats++;
-    }
-    else{
-        alert('You have already clicked four seats')
-    }
-
-   });
+  });
 }
 
 const btn = document.getElementById("apply-btn");
-        btn.addEventListener("click", function () {
-          const input = document.getElementById("coupone").value;
-          
-          const couponeCode = input.split(' ').join('').toUpperCase();
-        
-          if(couponeCode === 'NEW15'){
+btn.addEventListener("click", function () {
 
-           const discount = sum *15 /100;
-           const remainingAmount = sum - discount;
-           const total = document.getElementById('grandTotal');
-           total.innerText = remainingAmount.toFixed(2);
-          }
-          else if(couponeCode === 'COUPLE20'){
-            const discount = sum *20 /100;
-           const remainingAmount = sum - discount;
-           const total = document.getElementById('grandTotal');
-           total.innerText = remainingAmount.toFixed(2);
-          }
-          else{
-            alert('Invalid coupon code or coupon code expired');
-          }
-        
-        
-        });
+  const input = document.getElementById("coupone").value;
 
+  const couponeCode = input.split(" ").join("").toUpperCase();
 
+  if (couponeCode === "NEW15") {
+    const discount = (sum * 15) / 100;
+    const remainingAmount = sum - discount;
+    const total = document.getElementById("grandTotal");
+    total.innerText = remainingAmount.toFixed(2);
+
+    const btnHidden = document.getElementById('inputHidden');
+    btnHidden.classList.add('hidden');
+
+  } else if (couponeCode === "COUPLE20") {
+    const discount = (sum * 20) / 100;
+    const remainingAmount = sum - discount;
+    const total = document.getElementById("grandTotal");
+    total.innerText = remainingAmount.toFixed(2);
+
+    const btnHidden = document.getElementById('inputHidden');
+    btnHidden.classList.add('hidden');
+
+  } 
+  else {
+    alert("Invalid coupon code or coupon code expired");
+  }
+
+  
+
+});

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ticket</title>
+    <title>Bus-Ticket Landing Page</title>
     <!-- CSS link -->
     <link rel="stylesheet" href="styles/style.css" />
     <!-- Daisy UI Component -->
@@ -88,7 +88,7 @@
                 <button
                   class="btn bg-[#1DD100] text-[#030712] text-xl font-bold"
                 >
-                  Buy Tickets
+                  <a href="#seat-button">Buy Tickets</a>
                 </button>
               </div>
 
@@ -247,83 +247,94 @@
             </div>
   
             <div class="flex justify-end mt-4">
-              <button class="btn px-10">
+              <button class="btn px-10 bg-[#0307121A]">
                 <div class="w-10 "><img src="./images/staring.jpg" alt="" class="p-1"></div>
               </button>
             </div>
           </div>
           <!-- Seat List -->
-            <div class="grid grid-cols-5 gap-10  text-center mt-6">
-              <div id="A" class="plane">A</div>
-              <div id="A1" class="plan">A1</div>
-              <div id="A2" class="plan">A2</div>
-              <div id="A3" class="plan">A3</div>
-              <div id="A4" class="plan">A4</div>
-              <div id="B" class="plane">B</div>
-              <div id="B1" class="plan">B1</div>
-              <div id="B2" class="plan">B2</div>
-              <div id="B3" class="plan">B3</div>
-              <div id="B4" class="plan">B4</div>
-              <div id="C" class="plane">C</div>
-              <div id="C1" class="plan">C1</div>
-              <div id="C2" class="plan">C2</div>
-              <div id="C3" class="plan">C3</div>
-              <div id="C4" class="plan">C4</div>
-              <div id="D" class="plane">D</div>
-              <div id="D1" class="plan">D1</div>
-              <div id="D2" class="plan">D2</div>
-              <div id="D3" class="plan">D3</div>
-              <div id="D4" class="plan">D4</div>
-              <div id="E" class="plane">E</div>
-              <div id="E1" class="plan">E1</div>
-              <div id="E2" class="plan">E2</div>
-              <div id="E3" class="plan">E3</div>
-              <div id="E4" class="plan">E4</div>
-              <div id="F" class="plane">F</div>
-              <div id="F1" class="plan">F1</div>
-              <div id="F2" class="plan">F2</div>
-              <div id="F3" class="plan">F3</div>
-              <div id="F4" class="plan">F4</div>
-              <div id="G" class="plane">G</div>
-              <div id="G1" class="plan">G1</div>
-              <div id="G2" class="plan">G2</div>
-              <div id="G3" class="plan">G3</div>
-              <div id="G4" class="plan">G4</div>
-              <div id="H" class="plane">H</div>
-              <div id="H1" class="plan">H1</div>
-              <div id="H2" class="plan">H2</div>
-              <div id="H3" class="plan">H3</div>
-              <div id="H4" class="plan">H4</div>
-              <div id="I" class="plane">I</div>
-              <div id="I1" class="plan">I1</div>
-              <div id="I2" class="plan">I2</div>
-              <div id="I3" class="plan">I3</div>
-              <div id="I4" class="plan">I4</div>
-              <div id="J" class="plane">J</div>
-              <div id="J1" class="plan">J1</div>
-              <div id="J2" class="plan">J2</div>
-              <div id="J3" class="plan">J3</div>
-              <div id="J4" class="plan">J4</div>
-          
+            <div id="seat-button">
+              <div class="grid grid-cols-5 gap-10  text-center mt-6">
+                <div id="A" class="plane">A</div>
+                <div id="A1" class="plan">A1</div>
+                <div id="A2" class="plan">A2</div>
+                <div id="A3" class="plan">A3</div>
+                <div id="A4" class="plan">A4</div>
+                <div id="B" class="plane">B</div>
+                <div id="B1" class="plan">B1</div>
+                <div id="B2" class="plan">B2</div>
+                <div id="B3" class="plan">B3</div>
+                <div id="B4" class="plan">B4</div>
+                <div id="C" class="plane">C</div>
+                <div id="C1" class="plan">C1</div>
+                <div id="C2" class="plan">C2</div>
+                <div id="C3" class="plan">C3</div>
+                <div id="C4" class="plan">C4</div>
+                <div id="D" class="plane">D</div>
+                <div id="D1" class="plan">D1</div>
+                <div id="D2" class="plan">D2</div>
+                <div id="D3" class="plan">D3</div>
+                <div id="D4" class="plan">D4</div>
+                <div id="E" class="plane">E</div>
+                <div id="E1" class="plan">E1</div>
+                <div id="E2" class="plan">E2</div>
+                <div id="E3" class="plan">E3</div>
+                <div id="E4" class="plan">E4</div>
+                <div id="F" class="plane">F</div>
+                <div id="F1" class="plan">F1</div>
+                <div id="F2" class="plan">F2</div>
+                <div id="F3" class="plan">F3</div>
+                <div id="F4" class="plan">F4</div>
+                <div id="G" class="plane">G</div>
+                <div id="G1" class="plan">G1</div>
+                <div id="G2" class="plan">G2</div>
+                <div id="G3" class="plan">G3</div>
+                <div id="G4" class="plan">G4</div>
+                <div id="H" class="plane">H</div>
+                <div id="H1" class="plan">H1</div>
+                <div id="H2" class="plan">H2</div>
+                <div id="H3" class="plan">H3</div>
+                <div id="H4" class="plan">H4</div>
+                <div id="I" class="plane">I</div>
+                <div id="I1" class="plan">I1</div>
+                <div id="I2" class="plan">I2</div>
+                <div id="I3" class="plan">I3</div>
+                <div id="I4" class="plan">I4</div>
+                <div id="J" class="plane">J</div>
+                <div id="J1" class="plan">J1</div>
+                <div id="J2" class="plan">J2</div>
+                <div id="J3" class="plan">J3</div>
+                <div id="J4" class="plan">J4</div>
+            
+              </div>
             </div>
         </div>
 
         <div class="count flex-1">
           <h3 class="text-xl font-bold mb-5">Select Your Seat</h3>
-          <div class="bg-[#F7F8F8] p-2">
-            <div class="flex justify-between p-2 font-inter">
-              <p>Seat <span id="set" class="bg-[#1DD100] text-white">0</span></p>
-              <p>Class</p>
-              <p>Price</p>
-            </div>
-            <hr>
+          <div class="bg-[#F7F8F8] p-2 rounded-2xl">
+            
+            
             <div>
-              <div id="economy" class="flex justify-between p-2 font-inter mt-2">
-                
+              <div class=" ">
+                <div class="overflow-x-auto">
+                  <table class="table">
+                    <!-- head -->
+                    <thead>
+                      <tr class="text-lg font-inter">
+                        
+                        <th>Seat <span id="set" class="bg-[#1DD100] text-white">0</span></th>
+                        <th>Class</th>
+                        <th>Price</th>
+                      </tr>
+                    </thead>
+                    <tbody id="economy" class="font-inter">
+
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              <div class="flex justify-between p-2 font-inter">
-                
-              </div> <br>
+               <br>
               <hr>
               <div class="flex justify-between p-2 text-lg font-bold font-inter mt-3">
                 <p>Total Price</p>
@@ -331,7 +342,7 @@
               </div>
             </div>
   
-            <div class="">
+            <div id="inputHidden">
               <label class="input p-7 flex items-center gap-2 mt-4">
                 <input id="coupone" type="text" class="grow border-0" placeholder="Have any Copupon?" />
                 <button id="apply-btn" class="btn bg-[#1DD100] text-white font-bold px-5 ">Apply</button>
@@ -362,7 +373,35 @@
               <label class="input input-bordered flex items-center gap-2">
                 <input type="email" class="grow font-inter" placeholder="Enter your email id" />
               </label>
-              <button class="btn btn-wide w-full bg-[#1DD100] text-white text-xl font-bold mt-5">Next</button>
+
+              <div class="mt-10 w-full">
+                <button
+                    class="btn w-full bg-[#1DD100] text-white go-home text-2xl font-bold"
+                    onclick="my_modal_1.showModal()"
+                  >
+                    Next
+                  </button>
+                  <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                      <img src="./Images/success.png" alt="" class="mx-auto w-32">
+                      <h3 class="font-extrabold text-2xl text-center mt-5 go-home text-[#1DD100] font-inter">SUCCESS</h3>
+                      <p class="py-4 text-center go-home font-inter">
+                        <span class="font-bold">
+                          Thank you for Booking Our Bus Seats. 
+                        We are working hard to find the best service and deals for you.
+                        </span> 
+                        <br>Shortly you will find a confirmation in your email.
+                      </p>
+                      <div class="modal-action flex justify-center -mt-2">
+                        <form method="dialog">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn bg-[#1DD100] text-white go-home text-xl font-bold rounded-3xl font-inter">Continue</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+              </div>
+              
             </div>
 
             <div class="flex justify-around mt-10">
@@ -381,7 +420,7 @@
       
     </main>
 
-    <footer class="bg-black">
+    <footer class="bg-black h-96">
 
       <footer class="footer p-10  text-white  ">
         <div class="container mx-auto flex justify-between">
@@ -410,8 +449,8 @@
 
         
       </footer>
-      <hr class="h-4 ">
-      <div class=" container mx-auto flex justify-between mb-10">
+      <hr class=" ">
+      <div class=" container mx-auto flex justify-between mt-12">
         <div>
           <p class="text-lg font-medium text-white">@all rights reserved, P-Ticket services limited.2024</p>
         </div>
