@@ -2,27 +2,22 @@ let totalSeat = 40;
 let sum = 0;
 let clickedSeats = 0;
 const seats = document.getElementsByClassName("plan");
-
 for (let seat of seats) {
   seat.addEventListener("click", function oneClick() {
     seat.removeEventListener('click', oneClick);
 
-    if (clickedSeats < 4) {
-        
-    seat.classList.add('bg-[#1DD100]');
-      // 40 Seat Left
+    if (clickedSeats < 4) {  
+   seat.classList.add('bg-[#1DD100]');
       const seat42 = document.getElementById("seat40");
       let currentSeatCount = parseFloat(seat42.innerText);
       currentSeatCount--;
       seat42.innerText = currentSeatCount;
 
-      // Seat Click 4
       const set2 = document.getElementById("set");
       let currentSet2Count = parseFloat(set2.innerText);
       currentSet2Count++;
       set2.innerText = currentSet2Count;
 
-        // Seat Class Price Section
     const seatClassPrice = document.getElementById("economy");
     const rowLine = document.createElement("tr");
     const td = document.createElement("td");
@@ -39,7 +34,6 @@ for (let seat of seats) {
 
     seatClassPrice.appendChild(rowLine);
       
-      // Per Seat Taka
       const forPerSeatCost = document.getElementById("perSeatMoney");
       let perSeatCost = parseFloat(forPerSeatCost.innerText);
       let totalSeatCost = perSeatCost + 550;
@@ -56,8 +50,6 @@ for (let seat of seats) {
     } else {
       alert("You have already clicked four seats");
     }
-
-    
   });
 }
 
@@ -77,7 +69,8 @@ btn.addEventListener("click", function () {
     const btnHidden = document.getElementById('inputHidden');
     btnHidden.classList.add('hidden');
 
-  } else if (couponeCode === "COUPLE20") {
+  }
+  else if (couponeCode === "COUPLE20") {
     const discount = (sum * 20) / 100;
     const remainingAmount = sum - discount;
     const total = document.getElementById("grandTotal");
@@ -86,11 +79,9 @@ btn.addEventListener("click", function () {
     const btnHidden = document.getElementById('inputHidden');
     btnHidden.classList.add('hidden');
 
-  } 
+  }
   else {
     alert("Invalid coupon code or coupon code expired");
-  }
-
-  
+  };
 
 });

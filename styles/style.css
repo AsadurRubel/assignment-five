@@ -43,8 +43,6 @@
     cursor: pointer;
 }
 .plane{
-    background-color: #F7F8F8;
-    border-radius: 10px;
     height: 4rem;
     font-size: 2rem;
     font-family: "Inter", sans-serif;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en"
+data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +15,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body class="font-raleway">
     <!-- Navbar Start -->
     <section>
@@ -67,6 +69,7 @@
       </header>
     </section>
     <!-- Navbar End -->
+
     <main>
       <!-- P Paribahan Start -->
       <section>
@@ -74,12 +77,12 @@
           <div class="banner rounded-3xl">
             <div class="">
               <h1
-                class="text-white text-center text-6xl font-extrabold pt-20 leading-normal"
+                class="text-white text-center text-4xl lg:text-6xl font-extrabold pt-20 leading-normal"
               >
                 End-to-End Travel with <br />
                 <span class="text-[#1DD100]">P Paribahan</span>
               </h1>
-              <p class="text-white text-center w-2/5 mx-auto font-inter">
+              <p class="text-white text-center w-4/5 lg:w-2/5 mx-auto font-inter">
                 Yes, you can run unit tests and view the results directly within
                 the app. The integrated testing features allow for a streamlined
                 .
@@ -92,13 +95,13 @@
                 </button>
               </div>
 
-              <div class="flex justify-center gap-20 mt-24">
+              <div class="flex justify-center gap-5 lg:gap-20 mt-24 ">
                 <div
-                  class="bg-white flex gap-4 p-4 rounded-2xl border-b-2 border-green-600"
+                  class="bg-white flex gap-4 p-1 lg:p-4 rounded-2xl border-b-2 border-green-600"
                 >
                   <img src="./images/people.png" alt="" />
                   <div>
-                    <h2 class="text-4xl font-bold font-inter">500K+</h2>
+                    <h2 class="text-2xl lg:text-4xl font-bold font-inter">500K+</h2>
                     <p class="text-[#03071299] text-lg">Registered users</p>
                   </div>
                 </div>
@@ -108,7 +111,7 @@
                 >
                   <img src="./images/ticket-cupon.png" alt="" />
                   <div>
-                    <h2 class="text-4xl font-bold font-inter">1.7 lacks</h2>
+                    <h2 class="text-2xl lg:text-4xl font-bold font-inter">1.7 lacks</h2>
                     <p class="text-[#03071299] text-lg">Ticket sold</p>
                   </div>
                 </div>
@@ -118,7 +121,7 @@
                 >
                   <img src="./images/stoppage.png" alt="" />
                   <div>
-                    <h2 class="text-4xl font-bold font-inter">80K+</h2>
+                    <h2 class="text-2xl lg:text-4xl font-bold font-inter">80K+</h2>
                     <p class="text-[#03071299] text-lg">Rental partners</p>
                   </div>
                 </div>
@@ -133,7 +136,7 @@
       <section>
         <div class="container mx-auto my-32">
           <h3 class="text-4xl font-bold text-center">Best offers for you</h3>
-          <div class="flex gap-10 mt-8">
+          <div class="flex flex-col lg:flex-row gap-10 mt-8">
             <!-- Card 1 -->
             <div class="card card-side bg-[#FFBF0F] flex-1">
               <div class="card-body p-10 font-inter my-5">
@@ -175,7 +178,7 @@
         <div  class="buss mb-20">
           <div>
             <h3 class="text-4xl font-bold text-center mt-20">P.H Paribahan</h3>
-            <p class="text-center w-2/5 mx-auto font-inter my-4">
+            <p class="text-center w-3/5 lg:w-2/5 mx-auto font-inter my-4">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
             </p>
@@ -227,11 +230,9 @@
             </div>  
           </div> 
 
-
-
           <!-- Ticketing Interface section Start -->
-      <div class="container mx-auto mt-10 bg-white p-4 rounded-2xl flex gap-10">
-        <div class="w-3/5">
+      <div class="container mx-auto mt-10 bg-white p-4 rounded-2xl flex flex-col-reverse lg:flex-row gap-10">
+        <div class="w-full lg:w-3/5">
           <div class="seat">
             <h3 class="text-xl font-bold mb-5">Select Your Seat</h3>
             <hr>
@@ -252,6 +253,7 @@
               </button>
             </div>
           </div>
+
           <!-- Seat List -->
             <div id="seat-button">
               <div class="grid grid-cols-5 gap-10  text-center mt-6">
@@ -309,11 +311,9 @@
               </div>
             </div>
         </div>
-
         <div class="count flex-1">
           <h3 class="text-xl font-bold mb-5">Select Your Seat</h3>
           <div class="bg-[#F7F8F8] p-2 rounded-2xl">
-            
             
             <div>
               <div class=" ">
@@ -414,10 +414,9 @@
 
       <!-- Ticketing Interface section End -->
         </div>
+        
       </section>
       <!-- Bus Ticket section End -->
-
-      
     </main>
 
     <footer class="bg-black h-96">
@@ -440,14 +439,11 @@
                   <div>
                     <p class="text-lg font-semibold ">GET IN ON</p>
                   <h3 class="text-4xl font-bold">Google Play</h3>
-                  </div>
-                
+                  </div>     
               </div>
-              
           </nav>
         </div>
 
-        
       </footer>
       <hr class=" ">
       <div class=" container mx-auto flex justify-between mt-12">
